@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Kelvin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #121212;
+            padding: 15px;
+            border-bottom: 3px solid #132743;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin:3px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+            background: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul li a:hover {
+            color: #00ff99;
+            background-color: #132743;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px #132743;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background: #1e1e1e;
+            padding: 20px;
+        
+        }
+        #gambar{
+          border: 2px solid #a27c2c;
+          border-end-start-radius: 25px;
+          border-end-end-radius: 25px;
+          padding: 16px;
+          padding-bottom: 5px;
+          text-align: center;
+        }
+        #gambar img {
+          border-radius: 11px;
+        }
+        #gambar1{
+          border-block-end: 2px solid #132743;
+          padding: 16px;
+          padding-bottom: 5px;
+          text-align: center;
+        }
+
+        .animated-image {
+            width: 120px;
+            border-radius: 15px;
+            transition: 1s;
+            animation: bounce 1s infinite alternate;
+        }
+        .text-table {
+            margin-left: 20px;
+        }
+
+        .text-container {
+            font-size: 12px;
+            font-weight: bold;
+            padding: 3px;
+            color: gold;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background: black;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            text-align: center;
+        }
+        .image{
+          width: 120px;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            width: auto;
+            font-size: 14px;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            border-radius: 2px;
+            text-align: left;
+            padding: 8px;
+            color: white;
+            background-color: #132743;
+        }
+
+        tr:nth-child(even) {
+            background-color: black;
+        }
+    .gallery {
+        margin-top: 8px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-block-end: 3px solid gray;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+        box-shadow: 0 0 10px #132743;
+    }
+    #cb-bx {
+      margin: 5px;
+      border-color: #132743;
+      border-radius: 8px;
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/c970a81c74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#"><i style="margin:4px;"class="fa-brands fa-youtube"></i> Youtube</a></li>
+            <li><a href="#"><i style="margin:4px;"class="fa-solid fa-folder-open"></i> Folder</a></li>
+            <li><a href="#"><i style="margin:4px;"class="fas fa-user"></i> Saya</a></li>
+            <li><a href="#"><i style="margin:4px;"class="fa-brands fa-tiktok"></i> Tiktok</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="gambar"><img src="https://i.ibb.co.com/JWZbL1DM/Picsart-25-02-20-11-07-51-264.jpg" class="image"><p style="border-radius:5px;font-size:14px;border:2px solid #a27c2c;padding:3px;">programmer</p></div>
+        <div class="text-table">
+            <div class="text-container">MUHAMAD KELVIN ALFARIZQI</div>
+            <table>
+                <tr>
+                    <th>Hobi</th>
+                    <th>Tujuan</th>
+                    <th>Data</th>
+                </tr>
+                <tr>
+                    <td>Coding</td>
+                    <td>Risk</td>
+                    <td>Indonesia</td>
+                </tr>
+                <tr>
+                    <td>Editor</td>
+                    <td>Rich</td>
+                    <td>22TH</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="gambar1">
+    <img id="mainImage" src="https://i.ibb.co.com/cSYPkvTm/Picsart-25-02-20-10-57-09-729.png" alt="Gambar Animasi" class="animated-image">
+    <p style="font-family:courier;border-radius:5px;font-size:14px;border:2px solid #153057;padding:5px;"><b>Silahkan pilih apa yang anda inginkan</b></p>
+
+    <!-- Galeri gambar di bawah -->
+    <div class="gallery">
+        <img src="https://i.ibb.co.com/XvDZNcv/Picsart-25-02-20-10-45-14-671.jpg" alt="Gambar 1" onclick="changeMainImage(this)">
+        <img src="https://i.ibb.co.com/Zpp5btRr/Picsart-25-02-20-10-47-32-950.jpg" alt="Gambar 2" onclick="changeMainImage(this)">
+        <img src="https://i.ibb.co.com/zHSJzcmg/Picsart-25-02-20-10-53-48-728.jpg" alt="Gambar 3" onclick="changeMainImage(this)">
+        <img src="https://i.ibb.co.com/KjQCCbWf/Picsart-25-02-20-10-55-09-789.jpg" alt="Gambar 4" onclick="changeMainImage(this)">
+    </div>
+</div>
+<fieldset id="cb-bx">
+  <legend> Tentang </legend>
+  <p> Bagaimana tentang teknologi ini semakin pesat berkembangnya dan sobat masi santai-santai, jika saya seperti itu maka sayapun akan bangun dan bergegas belajar mengenai teknologi tersebut.</p>
+</fieldset>
+<script>
+    function changeMainImage(element) {
+        let mainImage = document.getElementById("mainImage");
+        mainImage.src = element.src;
+    }
+</script>
+</body>
+</html>
